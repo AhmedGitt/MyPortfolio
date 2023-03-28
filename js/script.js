@@ -47,9 +47,25 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer', 'Angular Developer', 'Backend Developer'],
+    strings: ['Frontend Developer', 'Angular Developer', 'Web Developer'],
     typeSpeed: 50,
     backSpeed: 50,
     backDelay: 1000,
     loop: true
 });
+
+function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
